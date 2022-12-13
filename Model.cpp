@@ -37,12 +37,11 @@ Model::Model()
     gym_ptrs.push_back(g2);
     object_ptrs.push_back(g2);
 
-    WildPokemon* w1 = new WildPokemon("WildPokemon1", 5.0, 2.0, false, 1, Point2D(10,12));//Don't know why this keeps saying that there is an invalid new expression for class type WildPokemon
-    wildpokemon_ptrs.push_back(w1);
+    WildPokemon* w1 = new WildPokemon("WildPokemon1", 5.0, 2.0, false, 1, Point2D(10,12));
     object_ptrs.push_back(w1);
     active_ptrs.push_back(w1);
 
-    WildPokemon* w2 = new WildPokemon("WildPokemon2", 5.0, 2.0, false, 2, Point2D(15,5));//Don't know why this keeps saying that there is an invalid new expression for class type WildPokemon
+    WildPokemon* w2 = new WildPokemon("WildPokemon2", 5.0, 2.0, false, 2, Point2D(15,5));
     wildpokemon_ptrs.push_back(w2);
     object_ptrs.push_back(w2);
     active_ptrs.push_back(w2);
@@ -99,7 +98,7 @@ WildPokemon* Model::GetWildPokemonPtr(int in_id) // I don't know why it says thi
 {
     for (auto iter = wildpokemon_ptrs.begin(); iter != wildpokemon_ptrs.end(); iter++)
     {
-        i f((*iter) -> GetId() == in_id)
+        if((*iter) -> GetId() == in_id)
         {
             return (*iter);
         }
