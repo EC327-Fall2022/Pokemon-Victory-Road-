@@ -19,7 +19,7 @@ class Model
     list<Trainer *> trainer_ptrs;
     list<PokemonGym *> gym_ptrs;
     list<PokemonCenter *> center_ptrs;
-    list<WildPokemon *> wildpokemon_ptrs;// I have it declared here
+    list<WildPokemon *> wildpokemon_ptrs;
     
     public:
     Model();
@@ -27,6 +27,7 @@ class Model
     Trainer* GetTrainerPtr(int);
     PokemonCenter* GetPokemonCenterPtr(int);
     PokemonGym* GetPokemonGymPtr(int);
+    WildPokemon* GetWildPokemonPtr(int);
     bool Update();
     void Display(View&);
     void ShowStatus();
