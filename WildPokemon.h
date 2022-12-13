@@ -32,6 +32,7 @@ class WildPokemon: public GameObject
     bool get_in_combat();
     bool Update();
     void ShowStatus();
+    bool ShouldBeVisible();
     bool IsAlive();
     private:
     unsigned int trainer_count;
