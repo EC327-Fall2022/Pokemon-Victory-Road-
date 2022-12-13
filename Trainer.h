@@ -27,8 +27,8 @@ enum PokemonStates
 class Trainer: public GameObject
 {
     public:
-    Trainer();// why is this giving an error? it was fine in PA3 and is just a default constructor... Says expects ZERO ARGUMENTS BUT ONE IS PROVIDED. WHEN DID I PROVIDE ONE??
-    Trainer(char in_code);// error is 5 arguments 1 provided... IM CONFUSED...
+    Trainer();
+    Trainer(char in_code);
     Trainer(string in_name, int in_id, char in_code, unsigned int in_speed, Point2D in_loc);
     virtual ~Trainer();
     void StartMoving(Point2D dest);
