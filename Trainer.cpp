@@ -370,4 +370,4 @@ void Trainer::SetupDestination(Point2D dest)
     else{    
         delta = (destination - location) * (speed / GetDistanceBetween(destination, location));
         }
-    }
+}
